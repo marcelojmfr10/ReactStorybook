@@ -1,20 +1,41 @@
 {
-  "name": "my-storybook",
+  "name": "jmfr-my-storybook",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "keywords": [
+    "react",
+    "dev",
+    "pro",
+    "storybook",
+    "marcelo",
+    "fuentes"
+  ],
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/marcelojmfr10/ReactStorybook",
+    "type": "git"
+  },
+  "files": [
+    "dist/"
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
   "scripts": {
     "dev": "npm run storybook",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_b8f4203c5af795e"
-  },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^5.2.1",
@@ -23,6 +44,7 @@
     "@storybook/addon-docs": "^10.4.4",
     "@storybook/addon-vitest": "^10.4.4",
     "@storybook/react-vite": "^10.4.4",
+    "@types/node": "^25.9.3",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react-swc": "^3.5.0",
@@ -35,6 +57,8 @@
     "eslint-plugin-storybook": "^10.4.4",
     "globals": "^15.14.0",
     "playwright": "^1.60.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "storybook": "^10.4.4",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.22.0",
